@@ -1,76 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="70" skipped="0" failures="0" errors="0" time="6.222198" timestamp="2025-02-07T10:11:57-08:00" hostname="BlueRed.local">
+<testsuite name="rspec" tests="70" skipped="0" failures="0" errors="0" time="3.358810" timestamp="2025-02-07T10:42:09-08:00" hostname="BlueRed.local">
 <properties>
-<property name="seed" value="26675"/>
+<property name="seed" value="6263"/>
 </properties>
-<testcase classname="spec.controllers.home_controller_spec" name="HomeController returns a 200 response" file="./spec/controllers/home_controller_spec.rb" time="0.030755"></testcase>
-<testcase classname="spec.controllers.home_controller_spec" name="HomeController#index responds successfully" file="./spec/controllers/home_controller_spec.rb" time="0.002025"></testcase>
-<testcase classname="spec.controllers.notes_controller_spec" name="NotesController#index searches notes by the provided keyword" file="./spec/controllers/notes_controller_spec.rb" time="0.018531"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#index as an authenticated user responds successfully" file="./spec/controllers/projects_controller_spec.rb" time="0.037006"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#index as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.007741"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#index as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.001788"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#show as an authorized user responds successfully" file="./spec/controllers/projects_controller_spec.rb" time="0.012552"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#show as an unauthorized user redirects to the dashboard" file="./spec/controllers/projects_controller_spec.rb" time="0.019548"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as an authenticated user with valid attributes adds a project" file="./spec/controllers/projects_controller_spec.rb" time="0.016437"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as an authenticated user with invalid attributes does not add a project" file="./spec/controllers/projects_controller_spec.rb" time="0.009676"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.002288"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.002038"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as an authorized user updates a project" file="./spec/controllers/projects_controller_spec.rb" time="0.009659"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as an unauthorized user does not update the project" file="./spec/controllers/projects_controller_spec.rb" time="0.012035"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as an unauthorized user redirects to the dashboard" file="./spec/controllers/projects_controller_spec.rb" time="0.012649"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.007899"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.009510"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as an authorized user deletes a project" file="./spec/controllers/projects_controller_spec.rb" time="0.012619"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as an unauthorized user does not delete the project" file="./spec/controllers/projects_controller_spec.rb" time="0.009991"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as an unauthorized user redirects to the dashboard" file="./spec/controllers/projects_controller_spec.rb" time="0.009925"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.006057"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.006845"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as a guest does not delete the project" file="./spec/controllers/projects_controller_spec.rb" time="0.007479"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#complete as an authenticated user an unsuccessful completion redirects to the project page" file="./spec/controllers/projects_controller_spec.rb" time="0.008943"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#complete as an authenticated user an unsuccessful completion sets the flash" file="./spec/controllers/projects_controller_spec.rb" time="0.008231"></testcase>
-<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#complete as an authenticated user an unsuccessful completion doesn&apos;t mark the project as completed" file="./spec/controllers/projects_controller_spec.rb" time="0.009352"></testcase>
-<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#show responds with JSON formatted output" file="./spec/controllers/tasks_controller_spec.rb" time="0.011418"></testcase>
-<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#create responds with JSON formatted output" file="./spec/controllers/tasks_controller_spec.rb" time="0.008302"></testcase>
-<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#create adds a new task to the project" file="./spec/controllers/tasks_controller_spec.rb" time="0.009709"></testcase>
-<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#create requires authentication" file="./spec/controllers/tasks_controller_spec.rb" time="0.006381"></testcase>
-<testcase classname="spec.jobs.geocode_user_job_spec" name="GeocodeUserJob calls geocode on the user" file="./spec/jobs/geocode_user_job_spec.rb" time="0.000718"></testcase>
-<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email sends a welcome email to the user&apos;s email address" file="./spec/mailers/user_mailer_spec.rb" time="0.005105"></testcase>
-<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email sends from the support email address" file="./spec/mailers/user_mailer_spec.rb" time="0.003539"></testcase>
-<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email sends with the correct subject" file="./spec/mailers/user_mailer_spec.rb" time="0.003730"></testcase>
-<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email greets the user by first name" file="./spec/mailers/user_mailer_spec.rb" time="0.004608"></testcase>
-<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email reminds the user of the registered email address" file="./spec/mailers/user_mailer_spec.rb" time="0.004057"></testcase>
-<testcase classname="spec.models.note_spec" name="Note is valid with a user, project, and message" file="./spec/models/note_spec.rb" time="0.015815"></testcase>
-<testcase classname="spec.models.note_spec" name="Note is invalid without a message" file="./spec/models/note_spec.rb" time="0.001449"></testcase>
-<testcase classname="spec.models.note_spec" name="Note has one attached attachment" file="./spec/models/note_spec.rb" time="0.022541"></testcase>
-<testcase classname="spec.models.note_spec" name="Note delegates name to the user who created it" file="./spec/models/note_spec.rb" time="0.001026"></testcase>
-<testcase classname="spec.models.note_spec" name="Note search message for a term when a match is found returns notes that match the search term" file="./spec/models/note_spec.rb" time="0.007795"></testcase>
-<testcase classname="spec.models.note_spec" name="Note search message for a term when no match is found returns an empty collection" file="./spec/models/note_spec.rb" time="0.005396"></testcase>
-<testcase classname="spec.models.project_spec" name="Project is expected to validate that :name is case-sensitively unique within the scope of :user_id" file="./spec/models/project_spec.rb" time="0.004662"></testcase>
-<testcase classname="spec.models.project_spec" name="Project can have many notes" file="./spec/models/project_spec.rb" time="0.006806"></testcase>
-<testcase classname="spec.models.project_spec" name="Project late status is late when the due date is past today" file="./spec/models/project_spec.rb" time="0.004178"></testcase>
-<testcase classname="spec.models.project_spec" name="Project late status is on time when the due date is today" file="./spec/models/project_spec.rb" time="0.003979"></testcase>
-<testcase classname="spec.models.project_spec" name="Project late status is on time when the due date is in the future" file="./spec/models/project_spec.rb" time="0.003966"></testcase>
-<testcase classname="spec.models.task_spec" name="Task is valid with a project and name" file="./spec/models/task_spec.rb" time="0.003553"></testcase>
-<testcase classname="spec.models.task_spec" name="Task is invalid without a project" file="./spec/models/task_spec.rb" time="0.000770"></testcase>
-<testcase classname="spec.models.task_spec" name="Task is invalid without a name" file="./spec/models/task_spec.rb" time="0.000371"></testcase>
-<testcase classname="spec.models.user_spec" name="User has a valid factory" file="./spec/models/user_spec.rb" time="0.001733"></testcase>
-<testcase classname="spec.models.user_spec" name="User is valid with a first name, last name and email, and password" file="./spec/models/user_spec.rb" time="0.001627"></testcase>
-<testcase classname="spec.models.user_spec" name="User is expected to validate that :first_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.001799"></testcase>
-<testcase classname="spec.models.user_spec" name="User is expected to validate that :last_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.001447"></testcase>
-<testcase classname="spec.models.user_spec" name="User is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.001438"></testcase>
-<testcase classname="spec.models.user_spec" name="User is expected to validate that :email is case-insensitively unique" file="./spec/models/user_spec.rb" time="0.005074"></testcase>
-<testcase classname="spec.models.user_spec" name="User returns a user&apos;s full name as a string" file="./spec/models/user_spec.rb" time="0.001589"></testcase>
-<testcase classname="spec.models.user_spec" name="User sends a welcome email on account creation" file="./spec/models/user_spec.rb" time="0.003666"></testcase>
-<testcase classname="spec.models.user_spec" name="User performs geocoding" file="./spec/models/user_spec.rb" time="0.015449"></testcase>
-<testcase classname="spec.requests.home_spec" name="Home page responds successfully" file="./spec/requests/home_spec.rb" time="0.029811"></testcase>
-<testcase classname="spec.requests.projects_api_spec" name="Projects API loads a project" file="./spec/requests/projects_api_spec.rb" time="0.018223"></testcase>
-<testcase classname="spec.requests.projects_api_spec" name="Projects API creates a project" file="./spec/requests/projects_api_spec.rb" time="0.010066"></testcase>
-<testcase classname="spec.requests.projects_spec" name="Projects as an authenticated user with valid attributes adds a project" file="./spec/requests/projects_spec.rb" time="0.005896"></testcase>
-<testcase classname="spec.requests.projects_spec" name="Projects as an authenticated user with invalid attributes does not add a project" file="./spec/requests/projects_spec.rb" time="0.012695"></testcase>
-<testcase classname="spec.system.notes_spec" name="Notes user uploads an attachment" file="./spec/system/notes_spec.rb" time="0.068413"></testcase>
-<testcase classname="spec.system.projects_spec" name="Projects user creates a new project" file="./spec/system/projects_spec.rb" time="0.037712"></testcase>
-<testcase classname="spec.system.projects_spec" name="Projects user completes a project" file="./spec/system/projects_spec.rb" time="0.021449"></testcase>
-<testcase classname="spec.system.sign_ins_spec" name="Sign in user signs in" file="./spec/system/sign_ins_spec.rb" time="0.025964"></testcase>
-<testcase classname="spec.system.sign_ups_spec" name="Sign-ups user successfully signs up" file="./spec/system/sign_ups_spec.rb" time="0.025151"></testcase>
-<testcase classname="spec.system.tasks_spec" name="Tasks user toggles a task" file="./spec/system/tasks_spec.rb" time="5.493034"></testcase>
+<testcase classname="spec.controllers.home_controller_spec" name="HomeController returns a 200 response" file="./spec/controllers/home_controller_spec.rb" time="0.025129"></testcase>
+<testcase classname="spec.controllers.home_controller_spec" name="HomeController#index responds successfully" file="./spec/controllers/home_controller_spec.rb" time="0.001586"></testcase>
+<testcase classname="spec.controllers.notes_controller_spec" name="NotesController#index searches notes by the provided keyword" file="./spec/controllers/notes_controller_spec.rb" time="0.017970"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#index as an authenticated user responds successfully" file="./spec/controllers/projects_controller_spec.rb" time="0.034722"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#index as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.006028"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#index as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.002559"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#show as an authorized user responds successfully" file="./spec/controllers/projects_controller_spec.rb" time="0.011009"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#show as an unauthorized user redirects to the dashboard" file="./spec/controllers/projects_controller_spec.rb" time="0.018844"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as an authenticated user with valid attributes adds a project" file="./spec/controllers/projects_controller_spec.rb" time="0.012776"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as an authenticated user with invalid attributes does not add a project" file="./spec/controllers/projects_controller_spec.rb" time="0.008182"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.001627"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#create as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.001281"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as an authorized user updates a project" file="./spec/controllers/projects_controller_spec.rb" time="0.008956"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as an unauthorized user does not update the project" file="./spec/controllers/projects_controller_spec.rb" time="0.009623"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as an unauthorized user redirects to the dashboard" file="./spec/controllers/projects_controller_spec.rb" time="0.008951"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.006165"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#update as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.006254"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as an authorized user deletes a project" file="./spec/controllers/projects_controller_spec.rb" time="0.009664"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as an unauthorized user does not delete the project" file="./spec/controllers/projects_controller_spec.rb" time="0.008794"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as an unauthorized user redirects to the dashboard" file="./spec/controllers/projects_controller_spec.rb" time="0.008459"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as a guest returns a 302 response" file="./spec/controllers/projects_controller_spec.rb" time="0.005839"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as a guest redirects to the sign-in page" file="./spec/controllers/projects_controller_spec.rb" time="0.005707"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#destroy as a guest does not delete the project" file="./spec/controllers/projects_controller_spec.rb" time="0.006151"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#complete as an authenticated user an unsuccessful completion redirects to the project page" file="./spec/controllers/projects_controller_spec.rb" time="0.007520"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#complete as an authenticated user an unsuccessful completion sets the flash" file="./spec/controllers/projects_controller_spec.rb" time="0.008478"></testcase>
+<testcase classname="spec.controllers.projects_controller_spec" name="ProjectsController#complete as an authenticated user an unsuccessful completion doesn&apos;t mark the project as completed" file="./spec/controllers/projects_controller_spec.rb" time="0.008157"></testcase>
+<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#show responds with JSON formatted output" file="./spec/controllers/tasks_controller_spec.rb" time="0.011490"></testcase>
+<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#create responds with JSON formatted output" file="./spec/controllers/tasks_controller_spec.rb" time="0.007672"></testcase>
+<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#create adds a new task to the project" file="./spec/controllers/tasks_controller_spec.rb" time="0.007500"></testcase>
+<testcase classname="spec.controllers.tasks_controller_spec" name="TasksController#create requires authentication" file="./spec/controllers/tasks_controller_spec.rb" time="0.005981"></testcase>
+<testcase classname="spec.jobs.geocode_user_job_spec" name="GeocodeUserJob calls geocode on the user" file="./spec/jobs/geocode_user_job_spec.rb" time="0.000591"></testcase>
+<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email sends a welcome email to the user&apos;s email address" file="./spec/mailers/user_mailer_spec.rb" time="0.004109"></testcase>
+<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email sends from the support email address" file="./spec/mailers/user_mailer_spec.rb" time="0.003262"></testcase>
+<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email sends with the correct subject" file="./spec/mailers/user_mailer_spec.rb" time="0.003122"></testcase>
+<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email greets the user by first name" file="./spec/mailers/user_mailer_spec.rb" time="0.003674"></testcase>
+<testcase classname="spec.mailers.user_mailer_spec" name="UserMailer welcome_email reminds the user of the registered email address" file="./spec/mailers/user_mailer_spec.rb" time="0.003269"></testcase>
+<testcase classname="spec.models.note_spec" name="Note is valid with a user, project, and message" file="./spec/models/note_spec.rb" time="0.013856"></testcase>
+<testcase classname="spec.models.note_spec" name="Note is invalid without a message" file="./spec/models/note_spec.rb" time="0.001432"></testcase>
+<testcase classname="spec.models.note_spec" name="Note has one attached attachment" file="./spec/models/note_spec.rb" time="0.028218"></testcase>
+<testcase classname="spec.models.note_spec" name="Note delegates name to the user who created it" file="./spec/models/note_spec.rb" time="0.000939"></testcase>
+<testcase classname="spec.models.note_spec" name="Note search message for a term when a match is found returns notes that match the search term" file="./spec/models/note_spec.rb" time="0.007505"></testcase>
+<testcase classname="spec.models.note_spec" name="Note search message for a term when no match is found returns an empty collection" file="./spec/models/note_spec.rb" time="0.005253"></testcase>
+<testcase classname="spec.models.project_spec" name="Project is expected to validate that :name is case-sensitively unique within the scope of :user_id" file="./spec/models/project_spec.rb" time="0.003770"></testcase>
+<testcase classname="spec.models.project_spec" name="Project can have many notes" file="./spec/models/project_spec.rb" time="0.007206"></testcase>
+<testcase classname="spec.models.project_spec" name="Project late status is late when the due date is past today" file="./spec/models/project_spec.rb" time="0.004947"></testcase>
+<testcase classname="spec.models.project_spec" name="Project late status is on time when the due date is today" file="./spec/models/project_spec.rb" time="0.004531"></testcase>
+<testcase classname="spec.models.project_spec" name="Project late status is on time when the due date is in the future" file="./spec/models/project_spec.rb" time="0.003814"></testcase>
+<testcase classname="spec.models.task_spec" name="Task is valid with a project and name" file="./spec/models/task_spec.rb" time="0.003715"></testcase>
+<testcase classname="spec.models.task_spec" name="Task is invalid without a project" file="./spec/models/task_spec.rb" time="0.000694"></testcase>
+<testcase classname="spec.models.task_spec" name="Task is invalid without a name" file="./spec/models/task_spec.rb" time="0.000341"></testcase>
+<testcase classname="spec.models.user_spec" name="User has a valid factory" file="./spec/models/user_spec.rb" time="0.001811"></testcase>
+<testcase classname="spec.models.user_spec" name="User is valid with a first name, last name and email, and password" file="./spec/models/user_spec.rb" time="0.001668"></testcase>
+<testcase classname="spec.models.user_spec" name="User is expected to validate that :first_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.002006"></testcase>
+<testcase classname="spec.models.user_spec" name="User is expected to validate that :last_name cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.001653"></testcase>
+<testcase classname="spec.models.user_spec" name="User is expected to validate that :email cannot be empty/falsy" file="./spec/models/user_spec.rb" time="0.001531"></testcase>
+<testcase classname="spec.models.user_spec" name="User is expected to validate that :email is case-insensitively unique" file="./spec/models/user_spec.rb" time="0.004740"></testcase>
+<testcase classname="spec.models.user_spec" name="User returns a user&apos;s full name as a string" file="./spec/models/user_spec.rb" time="0.001621"></testcase>
+<testcase classname="spec.models.user_spec" name="User sends a welcome email on account creation" file="./spec/models/user_spec.rb" time="0.003320"></testcase>
+<testcase classname="spec.models.user_spec" name="User performs geocoding" file="./spec/models/user_spec.rb" time="0.011861"></testcase>
+<testcase classname="spec.requests.home_spec" name="Home page responds successfully" file="./spec/requests/home_spec.rb" time="0.031579"></testcase>
+<testcase classname="spec.requests.projects_api_spec" name="Projects API loads a project" file="./spec/requests/projects_api_spec.rb" time="0.017052"></testcase>
+<testcase classname="spec.requests.projects_api_spec" name="Projects API creates a project" file="./spec/requests/projects_api_spec.rb" time="0.010496"></testcase>
+<testcase classname="spec.requests.projects_spec" name="Projects as an authenticated user with valid attributes adds a project" file="./spec/requests/projects_spec.rb" time="0.006428"></testcase>
+<testcase classname="spec.requests.projects_spec" name="Projects as an authenticated user with invalid attributes does not add a project" file="./spec/requests/projects_spec.rb" time="0.012089"></testcase>
+<testcase classname="spec.system.notes_spec" name="Notes user uploads an attachment" file="./spec/system/notes_spec.rb" time="0.064118"></testcase>
+<testcase classname="spec.system.projects_spec" name="Projects user creates a new project" file="./spec/system/projects_spec.rb" time="0.040138"></testcase>
+<testcase classname="spec.system.projects_spec" name="Projects user completes a project" file="./spec/system/projects_spec.rb" time="0.021129"></testcase>
+<testcase classname="spec.system.sign_ins_spec" name="Sign in user signs in" file="./spec/system/sign_ins_spec.rb" time="0.025363"></testcase>
+<testcase classname="spec.system.sign_ups_spec" name="Sign-ups user successfully signs up" file="./spec/system/sign_ups_spec.rb" time="0.023928"></testcase>
+<testcase classname="spec.system.tasks_spec" name="Tasks user toggles a task" file="./spec/system/tasks_spec.rb" time="2.681314"></testcase>
 </testsuite>

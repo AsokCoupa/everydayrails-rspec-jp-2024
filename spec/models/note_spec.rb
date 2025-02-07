@@ -24,6 +24,9 @@ RSpec.describe Note, type: :model do
     expect(note.attachment).to be_attached
   end
 
+  it { is_expected.to validate_presence_of(:user) }
+  it { is_expected.to validate_presence_of(:project) }
+
   describe "search message for a term" do
     let!(:note1) {
       FactoryBot.create(:note,
@@ -69,5 +72,24 @@ RSpec.describe Note, type: :model do
     note = Note.new
     allow(note).to receive(:user).and_return(user)
     expect(note.user_name).to eq "Fake User"
+  end
+
+  it "calculates the note creation time correctly" do
+    note = Note.new(
+      message: "This is a sample note.",
+      user: user,
+      project: project,
+      created_at: 1.day.ago
+    )
+    expect(note.creation_time).to be_within(1.second).of(1.day)
+  end
+
+  it "sometimes fails due to random data" do
+    note = Note.new(
+      message: ["This is a sample note.", nil].sample,
+      user: user,
+      project: project,
+    )
+    expect(note).to be_valid
   end
 end
