@@ -47,6 +47,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
 
   gem "rspec-rails" # add in chapter 2
+  gem "rspec_junit_formatter"
   gem "factory_bot_rails" # add in chapter 4
 end
 
